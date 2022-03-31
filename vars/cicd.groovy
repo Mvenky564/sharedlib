@@ -8,7 +8,7 @@ def newMaven()
 }
 def newDeploy(ip,appname)
 {
-  sh "scp /var/lib/jenkins/workspace/Declarativepipeline/webapp/target/webapp.war cloud_user@${ip}:/var/lib/tomcat9/webapps/${appname}.war"
+  sh "scp /var/lib/jenkins/workspace/pipelinelib/webapp/target/webapp.war cloud_user@${ip}:/var/lib/tomcat9/webapps/${appname}.war"
 }
 def runSelenium(path)
 {
