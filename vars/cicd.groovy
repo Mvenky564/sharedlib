@@ -12,7 +12,7 @@ def newDeploy(ip,appname)
 }
 def runSelenium(path)
 {
-  sh "java -jar ${path}/testing.jar"
+  sh "java -jar $path/testing.jar"
 }
 def newApprovals(name)
 {
